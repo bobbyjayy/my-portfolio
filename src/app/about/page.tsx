@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <main className="space-y-6">
+    <main className="space-y-6 text-xl">
       <h2 className="text-3xl font-bold">About Me</h2>
 
       <p>
@@ -17,9 +17,9 @@ export default function AboutPage() {
       </p>
 
       <p>
-        I&apos;m currently focused on deepening my backend skills, learning
-        different architectures, and preparing for junior developer roles. When
-        I&apos;m not coding, I lift weights and study Japanese.
+        I&apos;m currently focused on deepening my backend skills, design skills
+        and preparing for developer roles. When I&apos;m not coding, I lift
+        weights and study Japanese.
       </p>
 
       <section>

@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Robben Juan — Developer Portfolio
 
-## Getting Started
+Welcome to my personal portfolio built with **Next.js (App Router)** and **Tailwind CSS**.
 
-First, run the development server:
+This site showcases who I am, what I build, and my featured project — [RecipeAid](https://recipe-aid-nextjs.vercel.app), an AI-powered recipe generator that uses OpenAI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔗 [View Portfolio Site](https://my-portfolio-robbens-projects.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📸 Featured Project
 
-To learn more about Next.js, take a look at the following resources:
+### 🧠 RecipeAid — AI-Powered Meal Planner
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A smart recipe generator that takes your ingredients and builds a full meal plan using OpenAI. It includes user login, saved recipes, and clean UI/UX.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Tech Used:**
 
-## Deploy on Vercel
+- Next.js 14 (App Router)
+- MongoDB & Mongoose
+- OpenAI API
+- Tailwind CSS
+- Clean Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔗 [Live Project](https://my-portfolio-robbens-projects.vercel.app)  
+🔗 [Source Code](https://github.com/bobbyjayy/recipeaidnextjs)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+- React / Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Node.js / Express
+- MongoDB
+- OpenAI API
+- Git & GitHub
+- Vercel (Deployment)
+
+---
+
+## 👤 About Me
+
+I'm a self-taught web developer who builds full-stack applications with a focus on clean code and user experience. I'm learning clean architecture, improving my backend skills, and building real-world apps that solve problems.
+
+---
+
+## 📬 Contact
+
+- Email: [Robben.Juan@gmail.com](Robben.Juan@gmail.com)
+- GitHub: [@bobbyjayy](https://github.com/bobbyjayy)
+- Portfolio: [my-portfolio.vercel.app](https://my-portfolio-robbens-projects.vercel.app)

@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-black font-sans px-4 py-6 max-w-4xl mx-auto">
+      <body className="bg-beige text-black font-sans px-4 py-6 max-w-4xl mx-auto">
         <nav className="mb-6 flex justify-between">
           <h1 className="text-xl font-bold">Robben Juan</h1>
           <div className="space-x-4">
