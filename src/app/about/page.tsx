@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
-    <main className="space-y-6 text-xl">
-      <h2 className="text-3xl font-bold">About Me</h2>
+    <main className="max-w-3xl mx-auto px-6 py-16 text-center space-y-8 text-lg leading-relaxed">
+      <h2 className="text-4xl font-bold text-gray-900">About Me</h2>
 
       <p>
         I&apos;m a self-taught web developer with a passion for building
@@ -12,27 +12,37 @@ export default function AboutPage() {
       <p>
         I recently built <strong>RecipeAid</strong>, an AI-powered recipe
         generator that uses OpenAI&apos;s API to suggest meals based on user
-        ingredients. It features login, and a clean UI built with Tailwind CSS
-        and Next.js.
+        ingredients. It features user login and a modern UI built with Tailwind
+        CSS and Next.js.
       </p>
 
       <p>
-        I&apos;m currently focused on deepening my backend skills, design skills
-        and preparing for developer roles. When I&apos;m not coding, I lift
-        weights and study Japanese.
+        I&apos;m currently focused on deepening my backend and design skills
+        while preparing for developer roles. Outside of coding, I lift weights
+        and study Japanese.
       </p>
 
       <section>
-        <h3 className="text-2xl font-semibold mt-6 mb-2">Tech Stack</h3>
-        <ul className="grid grid-cols-2 gap-2 list-disc list-inside text-gray-700">
-          <li>JavaScript / TypeScript</li>
-          <li>React / Next.js</li>
-          <li>Node.js / Express</li>
-          <li>MongoDB / Mongoose</li>
-          <li>Tailwind CSS</li>
-          <li>OpenAI API</li>
-          <li>Clean Architecture</li>
-          <li>Git / GitHub</li>
+        <h3 className="text-2xl font-semibold mt-10 mb-4">Tech Stack</h3>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700">
+          {[
+            "JavaScript / TypeScript",
+            "React / Next.js",
+            "Node.js / Express",
+            "MongoDB / Mongoose",
+            "Tailwind CSS",
+            "OpenAI API",
+            "CI/CD",
+            "Git / GitHub",
+            "Vercel",
+          ].map((tech) => (
+            <li
+              key={tech}
+              className="bg-indigo-100 text-indigo-700 px-3 py-2 rounded text-sm font-medium"
+            >
+              {tech}
+            </li>
+          ))}
         </ul>
       </section>
     </main>
