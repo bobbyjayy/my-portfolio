@@ -1,90 +1,61 @@
-import Image from "next/image";
+// app/page.tsx
+"use client";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className=" snap-y snap-mandatory h-screen overflow-y-scroll scrollbar-hide pt-20">
-      <section
-        className="relative snap-start h-screen w-full flex items-center justify-center "
-        id="hero"
-      >
-        <div className="text-center">
-          <h2 className="text-5xl font-bold mb-2">Hey, I&apos;m Robben 👋</h2>
-          <p className="text-gray-700 text-2xl">
-            I build full-stack apps with TypeScript, React, and Node.
-          </p>
-        </div>
-        <a
-          href="#projects"
-          className="absolute text-xl bottom-10 flex flex-col text-center text-indigo-400 hover:text-indigo-600  text-sm"
+    <main className="min-h-screen bg-black text-white font-body flex flex-col items-center justify-center">
+      {/* Navbar */}
+      <header className="w-full max-w-3xl xl:max-w-6xl flex items-center relative">
+        <h1 className="font-inter text-md sm:text-2xl font-bold text-gray-200 absolute">
+          Robben Juan
+        </h1>
+        <nav className="space-x-2 sm:space-x-4 font-inter text-md sm:text-2xl text-gray-200 absolute right-0">
+          <Link href="/projects" className="font-inter hover:text-red-900">
+            My Projects
+          </Link>
+          <Link href="/about" className="font-inter hover:text-red-900">
+            About
+          </Link>
+          <a
+            href="https://github.com/bobbyjayy"
+            className="font-inter hover:text-red-900"
+            target="_blank"
+          >
+            Github
+          </a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="mt-2 w-full relative max-w-3xl xl:max-w-6xl h-[500px] md:h-[686px] bg-[#f1f1f1] text-black  overflow-hidden flex items-center justify-center">
+        {/* Noise Texture Overlay */}
+        <div className="absolute inset-0 bg-[url('/noise-strong.png')] bg-repeat opacity-10  pointer-events-none z-0" />
+        {/* Flower Image Animation */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="absolute top-5 xl:top-10 xl:right-0 w-64  md:w-[400px]"
         >
-          See My Work
-          <span>↓</span>
-        </a>
-      </section>
+          <Image src="/flower6.png" width={400} height={550} alt="flower" />
+        </motion.div>
 
-      <section
-        className="relative snap-start h-screen w-full flex items-center justify-center px-6"
-        id="projects"
-      >
-        <div className="flex flex-col lg:flex-row items-center gap-8 max-w-5xl w-full">
-          {/* Image */}
-          <div className="flex-1 border rounded-lg shadow-md overflow-hidden">
-            <Image
-              src="/recipeaid.png"
-              alt="Recipe App Screenshot"
-              width={800}
-              height={600}
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          {/* Content */}
-          <div className="flex-1">
-            <h3 className="text-3xl font-bold mb-2">AI Recipe Generator</h3>
-            <p className="text-lg text-gray-700 mb-4">
-              A smart app that suggests recipes based on your ingredients using
-              OpenAI.
-            </p>
-
-            {/* Tech stack tags */}
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["Next.js", "Tailwind", "MongoDB", "OpenAI API"].map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded-full font-medium"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {/* Links */}
-            <div className="space-x-4">
-              <Link
-                href="https://recipe-aid-nextjs.vercel.app"
-                target="_blank"
-                className="text-indigo-600 hover:underline"
-              >
-                Live Demo
-              </Link>
-              <Link
-                href="https://github.com/bobbyjayy/recipeaidnextjs"
-                target="_blank"
-                className="text-indigo-600 hover:underline"
-              >
-                GitHub
-              </Link>
-            </div>
-          </div>
-        </div>
-        <a
-          href="#hero"
-          className="absolute text-xl bottom-10 flex flex-col text-center text-indigo-400 hover:text-indigo-600  text-sm"
+        {/* Animated Text */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="grid sm:grid-cols-8 pb-20 sm:pl-10 text-6xl md:text-8xl xl:text-[128px] text-red-800 font-fraunces z-1 leading-none tracking-tight"
         >
-          <span>↑</span>
-          Back to Top
-        </a>
+          <div className=" col-span-4 sm:col-start-2 z-1">Welcome</div>
+          <div className="col-span-4 col-start-2 sm:col-start-3">to my</div>
+          <div className="col-span-4 col-start-2 sm:col-start-3 z-1">
+            portfolio
+          </div>
+        </motion.h2>
       </section>
     </main>
   );
